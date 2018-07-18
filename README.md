@@ -1,2 +1,2 @@
 # Notes
-Some Node about development
+Some Notes about development.

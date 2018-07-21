@@ -258,8 +258,6 @@ int main(int argc, char const *argv[]) {
 // 11953 ms
 ```
 ```
-
-
 var P = 1000000007;
 var maxn = 1000000000;// 1e9
 function solve() {

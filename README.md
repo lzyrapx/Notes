@@ -1,5 +1,6 @@
 # Notes
 ## 理性分析 C++(-O2) 和 JS 的性能差距.
+### On Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz.
 ### Test1：
 #### 最后一行：时间(ms)
 ```

@@ -1,32 +1,44 @@
 用户名正则
 //用户名正则，4到16位（字母，数字，下划线，减号）
+
 var uPattern = /^[a-zA-Z0-9_-]{4,16}$/;
 
 //输出 true
+
 console.log(uPattern.test("iFat3"));
 
 密码强度正则
+
 //密码强度正则，最少6位，包括至少1个大写字母，1个小写字母，1个数字，1个特殊字符
 
 var pPattern = /^.*(?=.{6,})(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*? ]).*$/;
 
 //输出 true
+
 console.log("=="+pPattern.test("iFat3#"));
 
 整数正则
+
 //正整数正则
 var posPattern = /^\d+$/;
+
 //负整数正则
 var negPattern = /^-\d+$/;
+
 //整数正则
 var intPattern = /^-?\d+$/;
+
 //输出 true
 console.log(posPattern.test("42"));
+
 //输出 true
 console.log(negPattern.test("-42"));
+
 //输出 true
 console.log(intPattern.test("-42"));
+
 数字正则
+
 可以是整数也可以是浮点数
 
 //正数正则

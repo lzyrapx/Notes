@@ -234,3 +234,6 @@ long : 4
 long long : 8
 ```
 [32位与64位系统基本数据类型的字节数](https://blog.csdn.net/u012611878/article/details/52455576)
+
+### 70.手写c++的单例模式，要考虑线程同步
+[C++的单例模式与线程安全单例模式（懒汉/饿汉）](https://www.cnblogs.com/qiaoconglovelife/p/5851163.html)

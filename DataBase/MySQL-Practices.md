@@ -22,7 +22,7 @@ WHERE A.S_SCORE>B.S_SCORE
 AND A.S_ID=B.S_ID;
 
 ```
-#### 2、查询平均成绩大于60分的学生的学号和平均
+#### 2、查询平均成绩大于60分的学生的学号和平均成绩
 【解题思路】通过Score表即可获取，按照Score表的S_ID分组后即可求出平均成绩，最后通过HAVING子句来过滤平均分大于60的学生:
 ```
 select S_ID, avg(s_score) from Score group by S_ID having avg(s_score)>60;

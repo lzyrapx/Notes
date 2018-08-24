@@ -160,14 +160,14 @@ order by avg(t.s_score)
 #### 18、查询各科成绩最高和最低的分： 以如下的形式显示：课程ID，最高分，最低分
 ```
 select L.c_id as 课程ID, L.s_score as 最高分,
-R.s_score as 最低分from Score L, Score R 
+R.s_score as 最低分 from Score L, Score R 
 where L.c_id = R.c_id 
 and L.s_score = (select max(IL.s_score)         
 from Score IL, Student as IM        
 where L.c_id=IL.c_id and IM.s_id=IL.s_id        
-group by IL.c_id)and R.s_score = (select min(IR.s_score)        
+group by IL.c_id) and R.s_score = (select min(IR.s_score)        
 from Score as IR        
-where R.c_id=IR.c_id        
+where R.c_id = IR.c_id        
 group by IR.c_id);
 ```
 #### 19、按各科平均成绩从低到高和及格率的百分数从高到低排列，以如下形式显示：课程号课程名平均成绩及格百分数

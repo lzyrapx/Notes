@@ -115,7 +115,7 @@ having count(*)=(select count(*) from Score where sno='1001')
 ```
 
 #### 13、把“SCORE”表中“猴子”老师教的课的成绩都更改为此课程的平均成绩
-【解题思路】考察数据库更改操作。首先找到李多多老师教过哪些课程及其课程的平均成绩，然后根据课程号关联成绩表进行更新
+【解题思路】考察数据库更改操作。首先找到“猴子”老师教过哪些课程及其课程的平均成绩，然后根据课程号关联成绩表进行更新
 ```
 Update Score Set S_score = (Select Avg(s2_S_score) From Score s2 Where s2.c_id=Score.c_id)  
 Where c_id IN

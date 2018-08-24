@@ -28,3 +28,14 @@ AND A.S_ID=B.S_ID;
 select S_ID, avg(s_score) from Score group by S_ID having avg(s_score)>60;
 ```
 
+#### 3、查询所有学生的学号、姓名、选课数、总成绩
+【解题思路】学生姓名通过STUDENT表获取，成绩通过SC表获取，考察的是COUNT和GROUPBY函数，最终SQL如下：
+```
+select student.s_id,student.s_name,count(score.s_id),sum(score.s_score)
+from student
+join score
+on student.s_id=score.s_id
+group by student.s_id;
+
+```
+

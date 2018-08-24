@@ -109,7 +109,7 @@ and c_id in (select c_id from SCORE where s_id='1001');
 【解题思路】首先找出学号为1001的学生学习过的课程，然后根据这些课程号和所学课程总数就可以找到有哪些同学学习过和他一样的课程
 ```
 select sno from Score 
-where c_id in(select c_id from Score from Score where sno='1001')
+where c_id in(select c_id from Score  where sno='1001')
 group by sno 
 having count(*)=(select count(*) from Score where sno='1001')
 ```
@@ -117,9 +117,9 @@ having count(*)=(select count(*) from Score where sno='1001')
 #### 13、把“SCORE”表中“猴子”老师教的课的成绩都更改为此课程的平均成绩
 【解题思路】考察数据库更改操作。首先找到李多多老师教过哪些课程及其课程的平均成绩，然后根据课程号关联成绩表进行更新
 ```
-Update Score Set S_score=(Select Avg(s2_S_score) From Score s2 Where s2.c_id=Score.c_id)  
+Update Score Set S_score = (Select Avg(s2_S_score) From Score s2 Where s2.c_id=Score.c_id)  
 Where c_id IN
-(Select c_id From Score cs INNER JOIN Teacher tc ON cs.t_id=tc.t_id WHERE t_name ='猴子');
+(Select c_id From Score cs INNER JOIN Teacher tc ON cs.t_id = tc.t_id WHERE t_name ='猴子');
 ```
 
 #### 14、查询和“1002”号的同学学习的课程完全相同的其他同学学号和姓名

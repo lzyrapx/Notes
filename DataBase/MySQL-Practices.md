@@ -105,7 +105,7 @@ from Student, SCORE
 where Student.s_id = Score.s_id 
 and c_id in (select c_id from SCORE where s_id='1001');
 ```
-#### 12、：查询和“1001”号同学所学课程完全相同的其他同学的学号
+#### 12、查询和“1001”号同学所学课程完全相同的其他同学的学号
 【解题思路】首先找出学号为1001的学生学习过的课程，然后根据这些课程号和所学课程总数就可以找到有哪些同学学习过和他一样的课程
 ```
 select sno from Score 

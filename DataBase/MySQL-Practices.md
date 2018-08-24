@@ -54,7 +54,7 @@ where S_ID not in (select distinct(SCORE.S_ID) from SCORE,Course,Teacher
 where Score.C_ID=Course.C_ID AND teacher.T_ID=Course.T_ID AND Teahcer.T_name ='猴子');
 ```
 #### 6、查询学过“猴子”老师所教的所有课的同学的学号、姓名
-【解题思路】这道题和第6题比较相似，需要理解题意，题目说的是查询学过“猴子”老师所教的所有课的同学的学号、姓名，举个例子，比如“猴子”老师教过语文和数学，那么就得找出哪些同学同时学习了语文和数学这2门课程。
+【解题思路】题目说的是查询学过“猴子”老师所教的所有课的同学的学号、姓名，举个例子，比如“猴子”老师教过语文和数学，那么就得找出哪些同学同时学习了语文和数学这2门课程。
 ```
 select S_ID,S_name   
 from Student    

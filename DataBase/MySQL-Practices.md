@@ -130,7 +130,7 @@ group by s_id having count(*)=
 (select count(*) from Score where s_id='1002');
 ```
 
-#### 15、删除学习“猴子”老师课的SC表记录
+#### 15、删除学习过“猴子”老师课的成绩表记录
 【解题思路】
 ```
 delect Score 
@@ -140,7 +140,7 @@ and Course.t_id=teacher.t_id
 and t_name='猴子';
 ```
 
-#### 16、向SC表中插入一些记录这些记录要求符合以下条件：没有上过编号为“003”课程的学生的学号、编号为002的课程的平均成绩
+#### 16、向成绩表中插入一些记录这些记录要求符合以下条件：没有上过编号为“003”课程的学生的学号、编号为002的课程的平均成绩
 ```
 Insert SCORE select S_ID,'002',
 (Select avg(s_score) from SCORE where C_ID='002') 

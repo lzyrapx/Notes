@@ -91,7 +91,8 @@ where s_id not in
 【解题思路】也就是学生学习的课程数小于总的课程数
 ```
 select Student.s_id, Student.s_name 
-from Student, Scorewhere Student.s_id=Score.s_id 
+from Student, Score
+where Student.s_id=Score.s_id 
 group by Student.s_id, Student.s_name 
 having count(c_id)<(select count(c_id) from Course);
 ```

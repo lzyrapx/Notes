@@ -294,7 +294,7 @@ where Score.s_score>=70 and Score.s_id=Student.s_id;
 #### 37、查询不及格的课程并按课程号从大到小排列
 ```
 select c_id from Score
-where s_score < 60 order by c_id;
+where s_score < 60 order by c_id desc;
 ```
 #### 38、查询课程编号为003且课程成绩在80分以上的学生的学号和姓名
 ```

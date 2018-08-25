@@ -213,17 +213,14 @@ GROUP BY SCORE.C_ID,C_name;
 ```
 SELECT 1+(SELECT COUNT( distinct 平均成绩) FROM (SELECT S_ID,AVG(s_score) AS 平均成绩 FROM SCORE GROUP BY S_ID  ) AS T1  
 WHERE 平均成绩 > T2.平均成绩) as 名次, S_ID as 学生学号,平均成绩      
-FROM (SELECT S_ID,AVG(s_score) 平均成绩 FROM SCORE GROUP BY S_ID ) AS T2 
+FROM (SELECT S_ID,AVG(s_score) as 学生ID, 平均成绩 FROM SCORE GROUP BY S_ID ) AS T2 
 ORDER BY 平均成绩 desc; 
 ```
 #### 25、查询各科成绩前三名的记录（不考虑成绩并列情况）
 ```
-SELECT t1.S_ID as 学生ID,t1.C_ID as 课程ID,S_score as 分数       
+SELECT t1.S_ID as 学生ID,t1.C_ID as 课程ID, S_score as 分数       
 FROM SCORE t1        
-WHERE s_score IN (SELECT TOP 3 s_score               
-FROM SCORE               
-WHERE t1.C_ID= C_ID             
-ORDER BY s_score DESC) ; 
+WHERE s_score IN (SELECT TOP 3 s_score FROM SCORE WHERE t1.C_ID= C_ID ORDER BY s_score DESC) ; 
 ```
 #### 26、查询每门课程被选修的学生数
 ```

@@ -149,7 +149,7 @@ from Student where S_ID not in (Select S_ID from SCORE where C_ID='003');
 
 #### 17、按平均成绩从高到低显示所有学生的“数据库”（c_id='004'）、“企业管理”（c_id='001'）、“英语”（c_id='006'）三门的课程成绩，按如下形式显示：学生ID，数据库，企业管理，英语，有效课程数，有效平均分select s_id as 学生ID,
 ```
-select s_id from Student as 学生ID
+select s_id from Student as 学生ID,
 (select s_score from Score where Score.s_id=t.s_id and c_id='004') as 数据库,
 (select s_score from Score where Score.s_id=t.s_id and c_id='001') as 企业管理,
 (select s_score from Score where Score.s_id=t.s_id and c_id='006') as 英语,

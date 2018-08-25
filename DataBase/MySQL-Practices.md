@@ -168,10 +168,10 @@ L.s_score = (select max(IL.s_score) from Score as IL, Student as IM where L.c_id
 and 
 R.s_score = (select min(IR.s_score) from Score as IR where R.c_id = IR.c_id group by IR.c_id);
 ```
-#### 19、按各科平均成绩从低到高和及格率的百分数从高到低排列，以如下形式显示：课程号课程名平均成绩及格百分数
+#### 19、按各科平均成绩从低到高和及格率的百分数从高到低排列，以如下形式显示：课程号 课程名 平均成绩 及格百分数
 ```
 SELECT t.C_ID AS 课程号,
-max(Course.C_name)AS 课程名,
+max(Course.C_name )AS 课程名,
 isnull(AVG(s_score),0) AS 平均成绩,
 100 * SUM(CASE WHEN  isnull(s_score,0)>=60 THEN 1 ELSE 0 END)/COUNT(*) AS 及格百分数     
 FROM SCORE T,Course     
@@ -191,7 +191,7 @@ where T.C_ID=C.C_ID and C.T_ID=Z.T_ID
 GROUP BY C.C_ID     
 ORDER BY AVG(S_score) DESC;
 ```
-#### 22、查询如下课程成绩第3名到第6名的学生成绩单，其中企业管理为001，马克思为002，UML为003，数据库为004，以如下形式显示：学生ID学生姓名企业管理马克思UML数据库平均成绩
+#### 22、查询如下课程成绩第3名到第6名的学生成绩单，其中企业管理为001，马克思为002，UML为003，数据库为004，以如下形式显示：学生ID 学生姓名 企业管理 马克思 UML 数据库 平均成绩
 ```
 这个不做
 ```

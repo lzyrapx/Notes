@@ -211,10 +211,8 @@ GROUP BY SCORE.C_ID,C_name;
 ```
 #### 24、查询学生平均成绩及其名次
 ```
-SELECT 1+(SELECT COUNT( distinct 平均成绩)                
-FROM (SELECT S_ID,AVG(s_score) AS 平均成绩                       
-FROM SCORE                   
-GROUP BY S_ID  ) AS T1  WHERE 平均成绩 > T2.平均成绩) as 名次, S_ID as 学生学号,平均成绩      
+SELECT 1+(SELECT COUNT( distinct 平均成绩) FROM (SELECT S_ID,AVG(s_score) AS 平均成绩 FROM SCORE GROUP BY S_ID  ) AS T1  
+WHERE 平均成绩 > T2.平均成绩) as 名次, S_ID as 学生学号,平均成绩      
 FROM (SELECT S_ID,AVG(s_score) 平均成绩 FROM SCORE GROUP BY S_ID ) AS T2 
 ORDER BY 平均成绩 desc; 
 ```

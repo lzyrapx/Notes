@@ -177,8 +177,7 @@ isnull(AVG(s_score),0) AS 平均成绩,
 FROM SCORE T,Course     
 where t.C_ID=Course.C_ID     
 GROUP BY t.C_ID      
-ORDER BY 100 * SUM(CASE WHEN  
-isnull(s_score,0)>=60 THEN 1 ELSE 0 END)/COUNT(*) DESC;
+ORDER BY 100 * SUM(CASE WHEN isnull(s_score,0)>=60 THEN 1 ELSE 0 END)/COUNT(*) DESC;
 ```
 #### 20、查询如下课程平均成绩和及格率的百分数（用1行显示），其中企业管理为001，马克思为002，UML为003，数据库为004这个不做21、查询不同老师所教不同课程平均分从高到低显示
 ```

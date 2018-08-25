@@ -164,7 +164,7 @@ select L.c_id as 课程ID, L.s_score as 最高分,
 R.s_score as 最低分 from Score L, Score R 
 where L.c_id = R.c_id 
 and 
-L.s_score = (select max(IL.s_score) from Score IL, Student as IM where L.c_id=IL.c_id and IM.s_id=IL.s_id group by IL.c_id) 
+L.s_score = (select max(IL.s_score) from Score as IL, Student as IM where L.c_id=IL.c_id and IM.s_id=IL.s_id group by IL.c_id) 
 and 
 R.s_score = (select min(IR.s_score) from Score as IR where R.c_id = IR.c_id group by IR.c_id);
 ```

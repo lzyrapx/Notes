@@ -18,7 +18,7 @@ The key's randomart image is:
 ```
 这样就成功了。
 
-2.然后执行 ：`cat ~/.ssh/id_rsa.puh` 命令，查看`ssh`私钥，复制粘贴到`github`的`ssh-key`设置里就行了。
+2.然后执行 ：`cat ~/.ssh/id_rsa.pub` 命令，查看`ssh`私钥，复制粘贴到`github`的`ssh-key`设置里就行了。
 
 3.然后在本地：`git clone`【项目ssh地址】
 

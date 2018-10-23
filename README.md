@@ -1,5 +1,5 @@
 # 这是一些笔记.(This is my notes)
-|-|
+***
 ## Example:
 ## Notes
 ### 理性分析 C++(-O2) 和 JS 的性能差距.

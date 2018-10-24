@@ -1,3 +1,7 @@
+### terminator的配色：
+```
+sudo vim ~/.config/terminator/config
+```
 建议第一个：
 ```
 [global_config]

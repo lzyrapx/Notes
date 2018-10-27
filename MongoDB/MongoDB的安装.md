@@ -46,9 +46,7 @@ connect@src/mongo/shell/mongo.js:240:13
 exception: connect failed
 ```
 解决方案：
-```
 [connection attempt failed ](https://blog.csdn.net/weixin_40612082/article/details/81568915?utm_source=blogxgwz1)
-```
 #### 5.查看配置文件
 
 配置文件`mongod.conf`所在路径: 

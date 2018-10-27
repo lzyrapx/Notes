@@ -112,8 +112,7 @@ root      5998  1.7  0.2 946052 19916 tty1     Tl   15:45   0:36 mongod
 root      6044  0.0  0.0  12892  1112 tty1     S    16:20   0:00 grep --color=auto mongod
 ```
 #### 7.卸载
-
-1. 关闭守护进程 mongod
+1. 关闭守护进程`mongod`
 ```
 sudo service mongod stop
 ```

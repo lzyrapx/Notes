@@ -16,7 +16,7 @@ sudo vim ~/.config/terminator/config
   [[default]]
     palette = "#000000:#5a8e1c:#2d5f5f:#cdcd00:#1e90ff:#cd00cd:#00cdcd:#e5e5e5:#4c4c4c:#868e09:#00ff00:#ffff00:#4682b4:#ff00ff:#00ffff:#ffffff"
     background_image = ""
-    background_darkness = 0.68
+    background_darkness = 0.90
     scrollback_lines = 3000
     background_type = transparent
     use_system_font = False

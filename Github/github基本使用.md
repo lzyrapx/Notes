@@ -51,6 +51,8 @@ Please make sure you have the correct access rights
 and the repository exists.
 就直接执行：`git push` 或者 ` git push --set-upstream origin master`)
 
+但使用一些git的操作仍然需要输入账号和密码，这需要：`git config --global credential.helper store`
+
 
 
 

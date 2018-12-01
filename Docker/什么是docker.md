@@ -10,3 +10,4 @@
 
 #### 总体来说，Docker 的接口相当简单，用户可以方便地创建和使用容器，把自己的应用放入容器。容器还可以进行版本管理、复制、分享、修改，就像管理普通的代码一样。
 ![virtual-machines](https://github.com/LzyRapx/Notes/blob/master/Docker/virtual-machines.png)
+![docker](https://github.com/LzyRapx/Notes/blob/master/Docker/docker.png)

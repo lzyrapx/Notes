@@ -11,4 +11,5 @@ https://github.com/pentium3/2015-ICPC-Regional/blob/f1ed2b08c1a181bf66751792c1cb
 https://blog.csdn.net/damotiansheng/article/details/51506990
 
 ------------------
+https://math.stackexchange.com/questions/30638/count-the-number-of-positive-solutions-for-a-linear-diophantine-equation
 https://github.com/topics/acm-icpc?o=desc&s=stars

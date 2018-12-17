@@ -18,7 +18,7 @@
 
 `git commit -m  “xxx”`
 
-`git push origin branch`
+`git push origin xxx`
 
 - 同步代码三部曲
 

@@ -27,7 +27,8 @@ sudo gedit /etc/passwd/
 ```
 /home/ubuntu:bin/zsh
 ```
-三、安装Oh-my-zsh 
+三、安装Oh-my-zsh
+
 安装之前，确认安装curl或者wget，可以使用`curl –version`或者`wget –version`查看
 ```
 sudo apt-get install curl
@@ -44,7 +45,8 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 ```
 重启之后生效
 
-四、安装插件 
+四、安装插件
+
 1.autojump
 ```
 sudo apt-get update

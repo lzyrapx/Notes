@@ -11,29 +11,37 @@ sudo chsh -s /bin/zsh
 ```
 sudo gedit /etc/passwd/
 ```
-将文件中最后一行
+将文件的第一行：
 ```
-ubuntu:x:500:500:ubuntu,,,:/home/ubuntu:bin/bash
+/bin/bash
 ```
-修改为
+修改成：
 ```
-ubuntu:x:500:500:ubuntu,,,:/home/ubuntu:bin/zsh
+/bin/zsh
+```
+将文件的最后一行：
+```
+/home/ubuntu:bin/bash
+```
+修改为：
+```
+/home/ubuntu:bin/zsh
 ```
 三、安装Oh-my-zsh 
-安装之前，确认安装curl或者wget，可以使用curl –version或者wget –version查看
-`
+安装之前，确认安装curl或者wget，可以使用`curl –version`或者`wget –version`查看
+```
 sudo apt-get install curl
 sudo apt-get install wget
-`
+```
 之后，使用以下命令安装Oh-my-zsh
-`
+```
 //via curl
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-`
-`
+```
+```
 //via wget
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-`
+```
 重启之后生效
 
 四、安装插件 

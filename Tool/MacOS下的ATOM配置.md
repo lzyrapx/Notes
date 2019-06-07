@@ -1,6 +1,7 @@
 ### Mac OS （OSX）系统下配置
 ```
-Mac下操作比较简单，只需要安装相应插件（主要是script）即可运行，其它主要插件如下，安装完成后点击command+i就可以调用系统clang编译器编译运行程序。
+Mac下操作比较简单，只需要安装相应插件（主要是script）即可运行，其它主要插件如下，
+安装完成后点击command+i就可以调用系统clang编译器编译运行程序。
 
 autocomplete-clang 在clang下 C/C++/ObjC 语言自动补全插件
 build，直接从Atom下编译程序、

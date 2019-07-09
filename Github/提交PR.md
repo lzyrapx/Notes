@@ -31,9 +31,13 @@
 或者：
 `
 git remote -v 
+
 git remote add upstream git@github.com:xxx/xxx.git
+
 git fetch upstream
+
 git merge upstream/master
+
 git push 
 `
 - 提交pr

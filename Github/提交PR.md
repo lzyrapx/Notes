@@ -29,8 +29,8 @@
 `git push origin master`
 
 或者：
-`
-git remote -v 
+
+`git remote -v 
 
 git remote add upstream git@github.com:xxx/xxx.git
 

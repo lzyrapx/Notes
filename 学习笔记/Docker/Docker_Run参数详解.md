@@ -1,7 +1,8 @@
 Usage: docker run [OPTIONS] IMAGE [COMMAND] [ARG...]  
-
-  -d, --detach=false         指定容器运行于前台还是后台，默认为false   
-  -i, --interactive=false   打开STDIN，用于控制台交互  
+|OPTIONS|COMMAND|
+|------:|---:|
+|  -d, --detach=false    |     指定容器运行于前台还是后台，默认为false  
+|  -i, --interactive=false  | 打开STDIN，用于控制台交互  |
   -t, --tty=false            分配tty设备，该可以支持终端登录，默认为false  
   -u, --user=""              指定容器的用户  
   -a, --attach=[]            登录容器（必须是以docker run -d启动的容器）

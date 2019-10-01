@@ -28,7 +28,7 @@
 |  --expose=[]          |      指定容器暴露的端口，即修改镜像的暴露端口  |
 |  --link=[]            |      指定容器间的关联，使用其他容器的IP、env等信息  |
 |  --lxc-conf=[]        |      指定容器的配置文件，只有在指定--exec-driver=lxc时使用  |
-|  --name=""            |      指定容器名字，后续可以通过名字进行容器管理，links特性需要使用名字  | container:NAME_or_ID  >//使用其他容器的网路，共享IP和PORT等网络资源; none: 容器使用自己的网络（类似--net=bridge），但是不进行配置 |
+|  --name=""            |      指定容器名字，后续可以通过名字进行容器管理，links特性需要使用名字 container:NAME_or_ID  >//使用其他容器的网路，共享IP和PORT等网络资源; none: 容器使用自己的网络（类似--net=bridge），但是不进行配置 |
 | --privileged=false     |    指定容器是否为特权容器，特权容器拥有所有的capabilities  |
 |  --restart="no"        |     指定容器停止后的重启策略: no：容器退出时不重启; on-failure：容器故障退出（返回值非零）时重启; always：容器退出时总是重启  |
 |  --rm=false            |     指定容器停止后自动删除容器(不支持以docker run -d启动的容器)  |

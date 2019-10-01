@@ -1,4 +1,5 @@
-Usage: docker run [OPTIONS] IMAGE [COMMAND] [ARG...]  
+Usage: docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
+
 |OPTIONS|COMMAND|
 |------:|---:|
 |  -d, --detach=false    |     指定容器运行于前台还是后台，默认为false  
